@@ -2,6 +2,14 @@
 <api context="research-groups/v1/vision" name="ResearchGroup-ComputerVision" xmlns="http://ws.apache.org/ns/synapse">
     <resource methods="GET" uri-template="/">
         <inSequence>
+            <call>
+                <endpoint key="rg-computer-vision"/>
+            </call>
+            <datamapper config="resources:datamapper/rg-vision-datamapper/rg-vision-datamapper.dmc" inputSchema="resources:datamapper/rg-vision-datamapper/rg-vision-datamapper_inputSchema.json" outputSchema="resources:datamapper/rg-vision-datamapper/rg-vision-datamapper_outputSchema.json"/>
+            <log category="INFO" logMessageID="false" logFullPayload="false">
+                <message></message>
+            </log>
+            <respond/>
         </inSequence>
         <faultSequence>
         </faultSequence>

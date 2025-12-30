@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<artifacts></artifacts>
+<artifacts>
+  <artifact name="resources_datamapper_rg-vision-datamapper_rg-vision-datamapper_dmc" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>rg-vision-datamapper.dmc</file>
+      <path>/_system/governance/mi-resources/datamapper/rg-vision-datamapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_rg-vision-datamapper_rg-vision-datamapper_inputSchema_json" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>rg-vision-datamapper_inputSchema.json</file>
+      <path>/_system/governance/mi-resources/datamapper/rg-vision-datamapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties></properties>
+    </item>
+  </artifact>
+  <artifact name="resources_datamapper_rg-vision-datamapper_rg-vision-datamapper_outputSchema_json" groupId="com.microintegrator.projects" version="1.0.0" type="registry/resource" serverRole="EnterpriseIntegrator">
+    <item>
+      <file>rg-vision-datamapper_outputSchema.json</file>
+      <path>/_system/governance/mi-resources/datamapper/rg-vision-datamapper</path>
+      <mediaType>text/plain</mediaType>
+      <properties/>
+    </item>
+  </artifact>
+</artifacts>

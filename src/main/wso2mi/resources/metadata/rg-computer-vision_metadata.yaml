@@ -1,0 +1,10 @@
+---
+key: "rg-computer-vision-1.0.0"
+name : "rg-computer-vision"
+displayName : "rg-computer-vision"
+description: "rg-computer-vision"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}https://portal.ce.pdn.ac.lk/api/taxonomy/v1/term/computer-vision"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
