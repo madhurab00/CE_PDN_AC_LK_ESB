@@ -1,0 +1,10 @@
+---
+key: "ResearchGroup-ComputerVision-1.0.0"
+name : "ResearchGroup-ComputerVision"
+displayName : "ResearchGroup-ComputerVision"
+description: "ResearchGroup-ComputerVision"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}research-groups/v1/vision"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false

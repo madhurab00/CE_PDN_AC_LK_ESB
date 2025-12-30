@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="research-groups/v1/vision" name="ResearchGroup-ComputerVision" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" uri-template="/">
+        <inSequence>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+    <resource methods="GET" uri-template="/publications">
+        <inSequence>
+            <call description="FIlter the publications by the research group">
+                <endpoint key="publications-filter-by-research-group"/>
+            </call>
+            <datamapper config="resources:datamapper/rg-computer-vision-mapper/rg-computer-vision-mapper.dmc" inputSchema="resources:datamapper/rg-computer-vision-mapper/rg-computer-vision-mapper_inputSchema.json" outputSchema="resources:datamapper/rg-computer-vision-mapper/rg-computer-vision-mapper_outputSchema.json"/>
+            <respond/>
+        </inSequence>
+        <faultSequence>
+        </faultSequence>
+    </resource>
+</api>
